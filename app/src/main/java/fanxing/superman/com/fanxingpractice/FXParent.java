@@ -7,7 +7,7 @@ package fanxing.superman.com.fanxingpractice;
  * 描述 继承泛型类别:父类
  */
 
-public class Parent<T1, T2> {
+public class FXParent<T1, T2> {
     private T1 t1;
     private T2 t2;
 

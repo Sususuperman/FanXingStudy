@@ -7,21 +7,20 @@ package fanxing.superman.com.fanxingpractice;
  * 描述 ?类型通配符，不是类型形参
  */
 
-public class FXTongpeifu {
+public class FXTongpeifu<T> {
 
-    public void getClass1(Test<?> test) {
-
-    }
 
 //    public void getClass2(Test<T> test) {//报错
 //
 //    }
 
-    class Test<T> {
-        private T t;
+    private T t;
 
-        public Test(T t) {
-            this.t = t;
-        }
+    public FXTongpeifu(T t) {
+        this.t = t;
+    }
+
+    public T getKey() {
+        return t;
     }
 }
